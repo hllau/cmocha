@@ -3,7 +3,8 @@ const {
   describe,
   before,
   after,
-  test
+  test,
+  xtest,
 } = require('mocha');
 
 
@@ -36,11 +37,24 @@ function ctest(description, generator) {
   return test(description, _generatorToCallback(generator));
 }
 
+function xctest(description, generator) {
+  return xtest(description, _generatorToCallback(generator));
+}
+
+cdescribe.skip = function(description, generator) {
+  return describe.skip(description, _generatorToCallback(generator));
+}
+
+cdescribe.only = function(description, generator) {
+  return describe.only(description, _generatorToCallback(generator));
+}
+
 
 module.exports = {
   cdescribe,
   cbefore,
   cafter,
-  ctest
+  ctest,
+  xctest,
 };
 
