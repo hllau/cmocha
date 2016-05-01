@@ -1,0 +1,26 @@
+{
+  "name": "cmocha",
+  "author": {
+    "name": "Hing-Lung Lau",
+    "email": "lung220@gmail.com",
+    "url": "https://github.com/hllau/cmocha.git"
+  },
+  "description": "Mocha with co",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hllau/cmocha.git"
+  },
+  "version": "1.0.0",
+  "keywords": [
+    "co",
+    "mocha"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "license": "BSD-3-Clause",
+  "peerDependencies": {
+    "co": "^4.6.0",
+    "mocha": "^2.4.5"
+  }
+}
