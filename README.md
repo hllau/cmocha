@@ -2,13 +2,13 @@
 
 A wrapper to use `co` generators in writing mocha tests.
 
-It does not do any monkey patching or pollutions the global namespace, but
-instead provide a new set of testing functions prefixed with `c`.
+It does not monkey patch or pollute the global namespace, but
+provide a new set of testing functions prefixed with `c`.
 
 
 # Installation
 
-Make sure destructuring is enabled in your version of `node`.
+Make sure ES6 destructuring is enabled in your version of `node`.
 
 To install:
 
