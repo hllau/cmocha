@@ -10,9 +10,10 @@ const {
 
 function _generatorToCallback(generator) {
   return function(done) {
+    const that = this;
     co(function *() {
       try {
-        yield generator();
+        yield generator.bind(that)();
         done();
       } catch (err) {
         done(err);
